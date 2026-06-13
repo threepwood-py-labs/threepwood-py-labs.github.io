@@ -3,100 +3,148 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Threepwood Py Labs</title>
-  <meta name="description" content="Focused Windows desktop tools and Python workspace automation.">
+  <title>Threepwood Py Labs — Windows desktop tools in Python &amp; PySide6</title>
+  <meta name="description" content="Open-source, Windows-first desktop tools built with Python and PySide6: media managers, download helpers, file utilities, and developer tools. Signed, portable releases.">
+  <meta property="og:title" content="Threepwood Py Labs">
+  <meta property="og:description" content="Focused, open-source Windows desktop tools built with Python and PySide6.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://threepwood-py-labs.github.io/">
+  <meta name="theme-color" content="#0b1220">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="eyebrow">Threepwood Py Labs</p>
-    <h1>Focused Windows tools built with Python and PySide.</h1>
-    <p class="intro">
-      A practical collection of desktop applications, shared runtime libraries,
-      and workspace automation for technical users.
-    </p>
-    <nav aria-label="Primary">
-      <a href="https://github.com/threepwood-py-labs">GitHub organization</a>
-      <a href="https://github.com/threepwood-py-labs/_py_workspace">Workspace automation</a>
-      <a href="#apps">Applications</a>
-    </nav>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">🐵 Threepwood Py Labs</p>
+      <h1>Focused Windows tools,<br><span class="grad">built in Python &amp; PySide6.</span></h1>
+      <p class="intro">
+        A practical collection of open-source desktop apps for media, downloads, files,
+        and developer workflows. Every app ships a single-file <code>.exe</code> and a
+        portable <code>.zip</code> — with SHA-256 checksums and signed build attestation.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#apps">Browse the apps</a>
+        <a class="btn" href="https://github.com/threepwood-py-labs">GitHub organization →</a>
+      </div>
+      <ul class="badges" aria-label="Highlights">
+        <li>🪟 Windows-first</li>
+        <li>🐍 Python 3.13</li>
+        <li>🎨 PySide6 / Qt 6</li>
+        <li>🔏 Signed releases</li>
+        <li>⚖️ MIT licensed</li>
+      </ul>
+    </div>
   </header>
 
-  <main>
+  <main class="wrap">
     <section id="apps" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Applications</p>
-        <h2>Desktop tools for media, search, files, and repositories.</h2>
+        <p class="eyebrow">🎬 Media &amp; downloads</p>
+        <h2>Tame your media library and download stack.</h2>
       </div>
-      <div class="app-grid">
-        <article>
-          <h3>arr-helper-ui</h3>
-          <p>Sonarr helper and media quality checker.</p>
-          <a href="https://github.com/threepwood-py-labs/arr-helper-ui">Repository</a>
-        </article>
-        <article>
-          <h3>prowlarr-ui</h3>
-          <p>Prowlarr search client with Everything duplicate checks.</p>
-          <a href="https://github.com/threepwood-py-labs/prowlarr-ui">Repository</a>
-        </article>
-        <article>
-          <h3>qbiremo-enhanced</h3>
-          <p>Advanced qBittorrent desktop client.</p>
-          <a href="https://github.com/threepwood-py-labs/qbiremo-enhanced">Repository</a>
-        </article>
-        <article>
+      <div class="grid">
+        <article class="card">
           <h3>video-duperz</h3>
-          <p>Perceptual duplicate video finder.</p>
-          <a href="https://github.com/threepwood-py-labs/video-duperz">Repository</a>
+          <p>Find and remove duplicate videos by perceptual fingerprint — scan, match, review, clean.</p>
+          <div class="links"><a class="dl" href="https://github.com/threepwood-py-labs/video-duperz/releases">⬇ Download</a><a href="https://github.com/threepwood-py-labs/video-duperz">Source</a></div>
         </article>
-        <article>
-          <h3>many-panelz-explorer</h3>
-          <p>Multi-panel Windows file explorer.</p>
-          <a href="https://github.com/threepwood-py-labs/many-panelz-explorer">Repository</a>
+        <article class="card">
+          <h3>arr-helper-ui</h3>
+          <p>Sonarr / Radarr companion for media quality auditing and library helper workflows.</p>
+          <div class="links"><a class="dl" href="https://github.com/threepwood-py-labs/arr-helper-ui/releases">⬇ Download</a><a href="https://github.com/threepwood-py-labs/arr-helper-ui">Source</a></div>
         </article>
-        <article>
-          <h3>git-statuz</h3>
-          <p>Git repository status and history viewer.</p>
-          <a href="https://github.com/threepwood-py-labs/git-statuz">Repository</a>
+        <article class="card">
+          <h3>prowlarr-ui</h3>
+          <p>Prowlarr search client with <em>Everything</em>-powered duplicate detection across indexers.</p>
+          <div class="links"><a class="dl" href="https://github.com/threepwood-py-labs/prowlarr-ui/releases">⬇ Download</a><a href="https://github.com/threepwood-py-labs/prowlarr-ui">Source</a></div>
         </article>
-        <article>
+        <article class="card">
+          <h3>qbiremo-enhanced</h3>
+          <p>Advanced remote desktop client for qBittorrent.</p>
+          <div class="links"><a class="dl" href="https://github.com/threepwood-py-labs/qbiremo-enhanced/releases">⬇ Download</a><a href="https://github.com/threepwood-py-labs/qbiremo-enhanced">Source</a></div>
+        </article>
+        <article class="card">
           <h3>mp3gain-gui-py</h3>
-          <p>PySide port of MP3Gain workflows.</p>
-          <a href="https://github.com/threepwood-py-labs/mp3gain-gui-py">Repository</a>
-        </article>
-        <article>
-          <h3>pdf-search-downloader-ui</h3>
-          <p>Desktop PDF search and download helper.</p>
-          <a href="https://github.com/threepwood-py-labs/pdf-search-downloader-ui">Repository</a>
-        </article>
-        <article>
-          <h3>web-pagez-to-pdf</h3>
-          <p>Windows-focused page capture utility.</p>
-          <a href="https://github.com/threepwood-py-labs/web-pagez-to-pdf">Repository</a>
-        </article>
-        <article>
-          <h3>backlogooze</h3>
-          <p>Backlog and workspace planning assistant.</p>
-          <a href="https://github.com/threepwood-py-labs/backlogooze">Repository</a>
+          <p>Modern GUI + CLI for MP3Gain ReplayGain loudness normalization.</p>
+          <div class="links"><a href="https://github.com/threepwood-py-labs/mp3gain-gui-py">Source</a></div>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">Workspace</p>
+        <p class="eyebrow">🗂️ Files &amp; documents</p>
+        <h2>Move files and capture pages, fast.</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>many-panelz-explorer</h3>
+          <p>Multi-panel Windows file explorer for power users.</p>
+          <div class="links"><a href="https://github.com/threepwood-py-labs/many-panelz-explorer">Source</a></div>
+        </article>
+        <article class="card">
+          <h3>web-pagez-to-pdf</h3>
+          <p>Capture web pages to PDF or image — scroll-stitching and multi-format export.</p>
+          <div class="links"><a href="https://github.com/threepwood-py-labs/web-pagez-to-pdf">Source</a></div>
+        </article>
+        <article class="card">
+          <h3>pdf-search-downloader-ui</h3>
+          <p>Browser-driven PDF search and bulk download — Google / Bing via Playwright.</p>
+          <div class="links"><a href="https://github.com/threepwood-py-labs/pdf-search-downloader-ui">Source</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">🛠️ Developer tools</p>
+        <h2>Stay on top of code and tasks.</h2>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>git-statuz</h3>
+          <p>Status, diff, and commit-history viewer across many Git repositories.</p>
+          <div class="links"><a href="https://github.com/threepwood-py-labs/git-statuz">Source</a></div>
+        </article>
+        <article class="card">
+          <h3>backlogooze</h3>
+          <p>Local-first AI work control plane — backlog, directives, and supervised Codex runs.</p>
+          <div class="links"><a href="https://github.com/threepwood-py-labs/backlogooze">Source</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">🧩 Shared building blocks</p>
         <h2>Shared tooling keeps the collection consistent.</h2>
       </div>
       <div class="link-list">
-        <a href="https://github.com/threepwood-py-labs/threep-commons">threep-commons</a>
-        <a href="https://github.com/threepwood-py-labs/_py_template">_py_template</a>
-        <a href="https://github.com/threepwood-py-labs/_py_workspace">_py_workspace</a>
+        <a href="https://github.com/threepwood-py-labs/threep-commons"><strong>threep-commons</strong><span>Shared PySide6 runtime &amp; helpers</span></a>
+        <a href="https://github.com/threepwood-py-labs/_py_template"><strong>_py_template</strong><span>Copier template for new apps</span></a>
+        <a href="https://github.com/threepwood-py-labs/_py_workspace"><strong>_py_workspace</strong><span>Workspace automation &amp; specs</span></a>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="section-heading">
+        <p class="eyebrow">✨ What ties it together</p>
+        <h2>One consistent standard across every project.</h2>
+      </div>
+      <div class="grid feat">
+        <div class="card"><h3>🪟 Windows-first</h3><p>Native-feeling PySide6 desktop apps with a consistent look and behavior.</p></div>
+        <div class="card"><h3>✅ Quality bar in CI</h3><p>Linted, strictly type-checked, and tested with coverage gates on every change.</p></div>
+        <div class="card"><h3>📦 Reproducible releases</h3><p>Single-file <code>.exe</code> + portable <code>.zip</code> + <code>SHA256SUMS</code> + signed attestation.</p></div>
+        <div class="card"><h3>🧬 Shared foundation</h3><p>Common runtime in <code>threep-commons</code>, scaffolded from one Copier template.</p></div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Threepwood Py Labs publishes practical Python desktop software for Windows.</p>
+    <div class="wrap">
+      <p>Threepwood Py Labs — practical Python desktop software for Windows.</p>
+      <p><a href="https://github.com/threepwood-py-labs">github.com/threepwood-py-labs</a></p>
+    </div>
   </footer>
 </body>
 </html>
